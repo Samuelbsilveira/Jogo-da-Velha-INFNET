@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="trabalhantes">
+    <h1 style="display:block;">Placar</h1>
+    <h1>Jogador <span style="color: green">X</span>: <span id="winX">0</span></h1>
+    <h1>Jogador <span style="color: red">O</span>: <span id="winO">0</span></h1>
+    <h1>Tempo: <span id="tempo">0</span> segundos</h1>
+    <h1>Melhor tempo: <span id="b-tempo">0</span> segundos</h1>
+  </div>
+  <section id="board">
+    <section id="info">
+        <h1>VEZ DO JOGADOR: <span id="jogador" style="color: green">X</span></h1>
+        <button id="reset" onClick="reset()">REINICIAR</button>
+    </section>
+    <section id="squares">
+        <div class="square" data-id="1"></div>
+        <div class="square" data-id="2"></div>
+        <div class="square" data-id="3"></div>
+        <div class="square" data-id="4"></div>
+        <div class="square" data-id="5"></div>
+        <div class="square" data-id="6"></div>
+        <div class="square" data-id="7"></div>
+        <div class="square" data-id="8"></div>
+        <div class="square" data-id="9"></div>
+    </section>
+    
+  </section>
+  <section id="modal-bg">
+    <article id="modal">
+        <h1 id="title-win">JOGADOR <span id="win" style="color: green">X</span> VENCEU</h1>
+        <button id="again" onClick="reset()">JOGAR NOVAMENTE</button>
+    </article>
+  </section>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
